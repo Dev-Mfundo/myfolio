@@ -1,0 +1,580 @@
+
+body{
+    background-image: url(/background/pexels-dids-3107148.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(19, 80, 146, 0.2);
+    -webkit-backdrop-filter: blur(15px) saturate(150%);
+    backdrop-filter: blur(15px) saturate(150%);
+    box-shadow: 0px 0px 4px rgb(104, 151, 151);
+    color: rgb(204, 209, 218);
+    border: 0px solid;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    margin: 10px auto;
+    max-width: 1950px;
+    overflow-x: hidden;
+    cursor: auto;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(102, 105, 70, 0.19);
+    -webkit-backdrop-filter: blur(15px) saturate(150%);
+    backdrop-filter: blur(15px) saturate(150%);
+    box-shadow: 0px 0px 9px rgba(49, 136, 68, 0.439);
+    border: 0px solid;
+    border-radius: 20px;
+    width: 100%;
+}
+
+#logo-img{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 90px;
+    height: 80px;
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.toggle-menu{
+    display: none;
+}
+
+.toggle-bar{
+    display: none;
+}
+
+li button{
+    display: none;
+}
+
+.navbar ul{
+    display: flex;
+    margin-right: 15px;
+    border: 0px solid;
+    border-radius: 20px;
+    background-color: rgba(134, 105, 62, 0.4);
+    -webkit-backdrop-filter: blur(15px) saturate(150%);
+    backdrop-filter: blur(15px) saturate(150%);
+    box-shadow: 0px 0px 4px rgb(104, 151, 151);
+    border-radius: 20px
+}
+
+ul li{
+    list-style-type: none;
+    padding: 25px;
+    
+}
+
+ul li a{
+    color:#ffff;
+    text-decoration: none;
+    margin:10px 5px;
+    font-size: 2.7em;
+    font-weight: 600;
+    border: 0px solid green;
+    border-radius: 20px;
+    padding: 15px;
+    background-color:  rgba(19, 80, 146, 0.2);
+    box-shadow: 0px 0px 4px rgb(104, 151, 151);
+}
+
+
+ul li a:hover{
+    color: rgb(63, 115, 134);
+    background-color: bisque;
+    transition: 0.3s;
+    
+}
+
+ul li a:active{
+    color: #478540;
+    background-color: #f1f0f0;
+}
+
+
+
+.description{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    width: 100%;
+    border-bottom: 1px solid  rgb(54, 208, 95);
+    
+}
+
+.section{
+    display: inline-block;
+}
+.cartoon-img img{
+    display: inline-flex;
+    float: right;
+
+}
+
+.phrase h2{
+    border: 1px solid rgb(54, 208, 95);
+    position: relative;
+    float: right;
+    top: 3.1em;
+    right:2.4em;
+    font-size: 7em;
+    line-height: 1.4;
+    font-weight: 400;
+    padding: 0px;
+    color: rgb(0, 102, 0);
+    margin-right: 20px;
+    z-index: -1;
+}
+
+/*DESCRIPTION H1 ANIMATION*/
+
+
+@keyframes animateWords{
+    0%{
+        transform: translateY(0%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}
+
+
+h1{
+    font-size: 5.2em;
+    margin-top: 2em;
+    margin-left: 28px;
+    font-weight: 600;
+    color: #f1f0f0;
+    > span {
+        display: inline-block;
+        height: 1.20em;
+        vertical-align: bottom;
+        overflow: hidden;
+        span {
+            display: block;
+            color:rgb(3, 77, 3);
+            animation: animateWords 6s infinite ease-in-out;
+            animation-delay: 1s;
+        }
+    }
+
+}
+
+    /*SOCIAL MEDIA*/
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(54, 208, 95);
+}
+
+.social h2{
+    color:rgb(4, 94, 4);
+    margin-left: 30px;
+    font-size: 5em;
+}
+
+.social h2 em{
+    font-size: 1.1em;
+}
+
+.other-links{
+    display: inline-block;
+    margin: 20px 15px;
+}
+
+
+#github-icon{
+    width: 100px;
+}
+
+#github-icon:hover{
+    border: 0px solid;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+    transition: 0.3s;
+}
+
+#github-icon:active{
+    background-color: #0000004d;
+}
+
+
+
+#linkedin-icon{
+    width: 100px;
+    height: 100px;
+}
+
+#linkedin-icon:hover{
+    border: 0px solid;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(15, 59, 11);
+    transition: 0.3s;
+}
+
+#linkedin-icon:active{
+    background-color: rgba(15, 59, 11, 0.418);
+}
+
+
+
+/*HIRE BUTTON*/
+
+.btn-me{
+    display: block;
+    margin: 60px 35px;
+    height: 10vh;
+    border-top: 1px solid  rgb(54, 208, 95);
+    padding: 20px;
+}
+
+.btn-me button{
+    color: #ffff;
+    background-color: #12527cc2;
+    font-weight: 600;
+    font-size: 3em;
+    padding: 20px;
+    border: 0px solid;
+    border-radius: 20px;
+}
+
+.btn-me button:hover{
+    color: black;
+    background-color: #478540;
+    transition: 0.4s;
+}
+
+.btn-me button:active{
+    background-color:  #12527c78;
+}
+
+
+    /*SECTION TWO ABOUT ME*/
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 3.5em;
+}
+
+.about h2{
+    font-size: 7em;
+    text-align: center;
+    margin-left: 25px;
+    z-index: -1;
+    color: rgb(42, 140, 23);
+    
+}
+
+.me-me h3{
+    color: #ffff;
+    font-size: 2.5em;
+    font-weight: 300;
+    margin: 10px;
+    background-color: #000000aa;
+    padding: 30px 10px;
+    background-size: cover;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+#about-img{
+    display: inline-flex;
+    position: relative;
+    right: 9em;
+    float: left;
+}
+
+.footer p{
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+    
+    /*SMARTPHONES*/
+
+    
+@media screen and (max-width: 768px){
+    body{
+        font-size: 14px;
+    }
+    .me-me h3{
+        margin: 10px;
+        font-size: 2.6em;
+    }
+
+.header,
+.navbar,
+.social,
+.other-links,
+.description,
+.section,
+.phrase h2
+.btn-me,
+.footer {
+    margin: 10px;
+}
+
+
+}
+
+
+@media screen and (max-width: 680px){
+    body{
+        font-size: 5px;
+    }
+
+    
+
+    .header{
+        margin: 0 auto;
+        width: 96%;
+        box-shadow: none;
+        background-color: rgba(102, 105, 70, 0.19);
+    }
+
+    #logo-img{
+        width: 50px;
+        height: 50px;
+        margin-top: 14px;
+        margin-bottom: 9px;
+        z-index: 1;
+    }
+    
+    .navbar{
+        display: none;
+
+    }
+
+    #list{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.7em;
+        width: 87%;
+        margin-top: 0px;
+        background-color: #73562189;
+    }
+
+    li button{
+        display: block;
+        position: relative;
+        left: 1.9em;
+        padding: 8px;
+        color: #000000;
+        font-size: 1.5em;
+        font-weight: 100;
+        border: 0px solid;
+        border-radius: 20px;
+    }
+
+    li button:hover{
+        color: #5f4a27;
+        background-color: #609d7c;
+        transition: 0.2s;
+    }
+
+    .social{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .social h2{
+        margin-top: 0px;
+        font-size: 3em;
+    }
+
+    .other-links{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        text-align: center;
+    }
+    #github-icon{
+        width: 50px;
+        height: 50px;
+    }
+    #linkedin-icon{
+        width: 50px;
+        height: 50px;
+    }
+
+    .navbar, .other-links, .description, .section, .phrase, .btn-me, .footer{
+        margin: 5px;
+    }
+
+    
+
+    .toggle-bar{
+        display: block;
+        margin: 10px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .toggle-bar:hover{
+        box-shadow: 0px 0px 10px #000000;
+        border-radius: 13px;
+    }
+    
+
+    .cartoon-img img{
+        display: block;
+        width: 350px;
+        margin-left: 30px;
+        float: left;
+    }
+
+    .description{
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1{
+        font-size: 6.5em;
+        margin-top: 0px;
+        height: 5vh;
+        margin-left: 28px;
+        font-weight: 600;
+        color: #f1f0f0;
+        > span {
+        display: inline-block;
+        height: 1.20em;
+        vertical-align: bottom;
+        overflow: hidden;
+        span {
+            display: block;
+            color:rgb(3, 77, 3);
+            animation: animateWords 6s infinite ease-in-out;
+            animation-delay: 1s;
+        }
+    }
+    }
+
+    .phrase h2{
+        display: block;
+        position: relative;
+        top: -2.2em;
+        right: 2.7em;
+        margin-bottom: 0px;
+
+    }
+    .about h2{
+        color: #1b751f;
+    }
+
+    .me-me h3{
+        padding: 20px;
+        font-size: 3em;
+    }
+
+
+    .btn-me{
+        border: 0px solid;
+    }
+
+    .btn-me button{
+        display: block;
+        margin: 0 auto;
+        font-size: 6em;
+        padding: 16px;
+    }
+}
+    
+    /*TABLETS AND LARGER SCREENS*/
+    
+@media screen and (max-width: 1180px) and  (min-width: 768px){
+    .header{
+        box-shadow: none;
+    }
+
+    .phrase h2{
+        color: rgb(0, 102, 0);
+        font-size: 6em;
+        top: 4em;
+        right: 6.2em;
+    }
+
+    .navbar{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    li button{
+        display: block;
+        position: relative;
+        left: 1.4em;
+        padding: 8px;
+        color: #168019;
+        font-size: 1.45em;
+        font-weight: 300;
+        border: 0px solid;
+        border-radius: 20px;
+    }
+
+    li button:hover{
+        color: #5f4a27;
+        background-color: #609d7c;
+        transition: 0.2s;
+    }
+
+
+    .about{
+        position: relative;
+        left: 3.5em;
+    }
+    .about h3{
+        position: relative;
+        left: 4.2em;
+    }
+
+    #about-img{
+        width: 100%;
+        height: 100%;
+        float: right;
+    }
+
+    #list{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-weight: 0;
+        z-index: 1;
+
+    }
+
+    .social{
+        margin-top:0px;
+    }
+
+    .toggle-bar{
+        display: block;
+        margin-top: 20px;
+        width: 100px;
+        height: 100px;
+        font-weight: 300;
+    }
+
+
+
+}
