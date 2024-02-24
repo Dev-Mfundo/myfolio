@@ -12,7 +12,7 @@ body{
     border-radius: 20px;
     box-sizing: border-box;
     font-family: 'Playfair Display', serif;
-    margin: 10px auto;
+    margin: 0px;
     width: 100%;
     max-width: 1950px;
     overflow-x: hidden;
@@ -316,8 +316,7 @@ h1{
 @media screen and (max-width: 768px){
     body{
         font-size: 14px;
-        display: block;
-        margin: 0 auto;
+        overflow-x: hidden;
     }
     .me-me h3{
         margin: 10px;
@@ -345,9 +344,7 @@ h1{
 @media screen and (max-width: 680px){
     body{
         font-size: 5px;
-        display: block;
-margin: 0 auto;
-
+        overflow-x: hidden;
     }
 
     
@@ -519,6 +516,9 @@ margin: 0 auto;
     /*TABLETS AND LARGER SCREENS*/
     
 @media screen and (max-width: 1180px) and  (min-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
     .header{
         box-shadow: none;
     }
