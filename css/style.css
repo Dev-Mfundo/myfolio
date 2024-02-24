@@ -13,7 +13,7 @@ body{
     box-sizing: border-box;
     font-family: 'Playfair Display', serif;
     margin: 10px auto;
-    width: min-content;
+    width: 100%;
     max-width: 1950px;
     overflow-x: hidden;
     cursor: auto;
