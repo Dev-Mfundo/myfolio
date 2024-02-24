@@ -272,6 +272,7 @@ h1{
     justify-content: space-between;
     position: relative;
     left: 3.5em;
+    overflow-x: hidden;
 }
 
 .about h2{
@@ -321,6 +322,8 @@ h1{
         margin: 10px;
         font-size: 2.6em;
     }
+
+    
 
 .header,
 .navbar,
@@ -486,6 +489,16 @@ h1{
         font-size: 3em;
     }
 
+    #about-img{
+    display: inline-flex;
+    position: relative;
+    right: 35em;
+    float: left;
+    z-index: -1;
+    height: min-content;
+    width: min-content;
+    }
+
 
     .btn-me{
         border: 0px solid;
@@ -545,7 +558,7 @@ h1{
     }
     .about h3{
         position: relative;
-        left: 4.2em;
+        left: 2.6em;
     }
 
     #about-img{
