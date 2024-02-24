@@ -316,7 +316,6 @@ h1{
 @media screen and (max-width: 768px){
     body{
         font-size: 14px;
-        overflow-x: hidden;
     }
     .me-me h3{
         margin: 10px;
@@ -344,7 +343,6 @@ h1{
 @media screen and (max-width: 680px){
     body{
         font-size: 5px;
-        overflow-x: hidden;
     }
 
     
@@ -516,9 +514,6 @@ h1{
     /*TABLETS AND LARGER SCREENS*/
     
 @media screen and (max-width: 1180px) and  (min-width: 768px){
-    body{
-        overflow-x: hidden;
-    }
     .header{
         box-shadow: none;
     }
