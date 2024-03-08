@@ -12,7 +12,7 @@ body{
     border-radius: 20px;
     box-sizing: border-box;
     font-family: 'Playfair Display', serif;
-    margin: 10px 0px;
+    margin: 10px auto;
     max-width: 1950px;
     overflow-x: hidden;
     cursor: auto;
